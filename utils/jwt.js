@@ -16,7 +16,7 @@ export function generateAccessToken(user) {
       id: user.id,
       role: user.role,
     },
-    getJwtSecret(),
+    process.env.JWT_SECRET,
     
   );
 }
