@@ -17,9 +17,7 @@ export function generateAccessToken(user) {
       role: user.role,
     },
     getJwtSecret(),
-    {
-      expiresIn: process.env.JWT_EXPIRES_IN || "1d",
-    },
+    
   );
 }
 
